@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/achievementtoast.xml" value="0.2175" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/baseline_settings_24.xml" value="0.3625" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/borderpopup.xml" value="0.3625" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/button_left.xml" value="0.349" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/button_right.xml" value="0.348" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/buttonborder.xml" value="0.3615" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/categoryborder.xml" value="0.3615" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/changepopup.xml" value="0.127" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/cogmenu.xml" value="0.301" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/dimming.xml" value="0.3615" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/divider.xml" value="0.3095" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/editborder.xml" value="0.3625" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/greenbutton.xml" value="0.3615" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/popup.xml" value="0.3625" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/popupbutton.xml" value="0.3615" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/progress_blue.xml" value="0.1995" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/progress_green.xml" value="0.1995" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/progress_pink.xml" value="0.3625" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/progress_purple.xml" value="0.1995" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/progress_yellow.xml" value="0.1995" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/progressbarborder.xml" value="0.3625" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/textfieldborder.xml" value="0.3615" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/drawable/yellowbutton.xml" value="0.349" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/activity_settings.xml" value="0.22" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/changepopup.xml" value="0.36041666666666666" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/cogmenu_layout.xml" value="0.1" />
+        <entry key="..\:/ADA-Informatica 02/BP5/AndroidStudio/app/src/main/res/layout/transaction_window.xml" value="0.3333333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

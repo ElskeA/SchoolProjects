@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="JavaFX 17">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../SceneBuilder/javafx-sdk-17.0.1/lib" />
+      <root url="file://$PROJECT_DIR$/../SceneBuilder/javafx-sdk-17.0.1/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../SceneBuilder/javafx-sdk-17.0.1/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../SceneBuilder/javafx-sdk-17.0.1/lib" recursive="false" />
+  </library>
+</component>

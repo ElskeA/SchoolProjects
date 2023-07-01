@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dim_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_home">
+
+        <Button
+            android:id="@+id/btnMeds"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="69dp"
+            android:background="@drawable/btn_plus"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@+id/borderMeds"
+            app:layout_constraintTop_toBottomOf="@+id/btnPets"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnOther"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/btn_plus"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@+id/borderOther"
+            app:layout_constraintTop_toBottomOf="@+id/btnMeds"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+
+        android:fontFamily="@font/futur_heavy"
+        android:text="@string/hello"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/futur_heavy"
+
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/borderGroceries"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHello"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="98dp"
+            android:layout_height="64dp"
+
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="128dp"
+
+            android:fontFamily="@font/futur_heavy"
+            android:text="@string/your_budget"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_right"
+            android:fontFamily="@font/futur_heavy"
+            android:text="@string/reset"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderOther"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_left"
+            android:fontFamily="@font/futur_heavy"
+            android:text="@string/undo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderOther"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnHygiene"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/btn_plus"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@+id/borderHygiene"
+            app:layout_constraintTop_toBottomOf="@+id/btnGroceries"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnPets"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/btn_plus"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@+id/borderPets"
+            app:layout_constraintTop_toBottomOf="@+id/btnHygiene"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnGroceries"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_plus"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@+id/borderGroceries"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/borderGroceries"
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/categoryborder"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/borderHygiene"
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderGroceries"
+            app:srcCompat="@drawable/categoryborder" />
+
+        <ImageView
+            android:id="@+id/borderPets"
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderHygiene"
+            app:srcCompat="@drawable/categoryborder" />
+
+        <ImageView
+            android:id="@+id/borderMeds"
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderPets"
+            app:srcCompat="@drawable/categoryborder" />
+
+        <ImageView
+            android:id="@+id/borderOther"
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderMeds"
+            app:srcCompat="@drawable/categoryborder" />
+
+    <ProgressBar
+        android:id="@+id/progressGroceries"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:progressDrawable="@drawable/progress_pink"
+        android:max="100"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="@+id/borderGroceries"
+        app:layout_constraintEnd_toEndOf="@+id/borderGroceries"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/borderGroceries" />
+
+    <ProgressBar
+        android:id="@+id/progressHygiene"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_purple"
+        app:layout_constraintBottom_toBottomOf="@+id/borderHygiene"
+        app:layout_constraintEnd_toEndOf="@+id/borderHygiene"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/borderHygiene"
+        app:layout_constraintTop_toTopOf="@+id/borderHygiene" />
+
+    <ProgressBar
+        android:id="@+id/progressPets"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_green"
+        app:layout_constraintBottom_toBottomOf="@+id/borderPets"
+        app:layout_constraintEnd_toEndOf="@+id/borderPets"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/borderPets" />
+
+    <ProgressBar
+        android:id="@+id/progressMeds"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_yellow"
+        app:layout_constraintBottom_toBottomOf="@+id/borderMeds"
+        app:layout_constraintEnd_toEndOf="@+id/borderMeds"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/borderMeds"
+        app:layout_constraintTop_toTopOf="@+id/borderMeds" />
+
+    <ProgressBar
+        android:id="@+id/progressOther"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/borderOther"
+        app:layout_constraintEnd_toEndOf="@+id/borderOther"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/borderOther" />
+
+        <TextView
+            android:id="@+id/tvGroceries_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€140,00 left"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressGroceries"
+            app:layout_constraintEnd_toEndOf="@+id/borderGroceries"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="@+id/borderGroceries"
+            app:layout_constraintTop_toTopOf="@+id/borderGroceries"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvGroceries_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€140,00 "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/borderGroceries"
+            app:layout_constraintEnd_toEndOf="@+id/borderGroceries"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressGroceries"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvHygiene_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€50,00 left"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressHygiene"
+            app:layout_constraintEnd_toEndOf="@+id/borderHygiene"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="@+id/borderHygiene"
+            app:layout_constraintTop_toTopOf="@+id/borderHygiene"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvHygiene_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€50,00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/borderHygiene"
+            app:layout_constraintEnd_toEndOf="@+id/borderHygiene"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="@+id/borderHygiene"
+            app:layout_constraintTop_toBottomOf="@+id/progressHygiene"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvPets_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€35,00 left"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressPets"
+            app:layout_constraintEnd_toEndOf="@+id/borderPets"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="@+id/borderPets"
+            app:layout_constraintTop_toTopOf="@+id/borderPets"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvPets_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€35,00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/borderPets"
+            app:layout_constraintEnd_toEndOf="@+id/borderPets"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="@+id/borderPets"
+            app:layout_constraintTop_toBottomOf="@+id/progressPets"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvMeds_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€50,00 left"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressMeds"
+            app:layout_constraintEnd_toEndOf="@+id/borderMeds"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/borderMeds"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvMeds_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€50,00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/borderMeds"
+            app:layout_constraintEnd_toEndOf="@+id/borderMeds"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressMeds"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvOther_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€100,00 left"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressOther"
+            app:layout_constraintEnd_toEndOf="@+id/borderOther"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/borderOther"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvOther_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futur_heavy"
+            android:text="€100,00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/borderOther"
+            app:layout_constraintEnd_toEndOf="@+id/borderOther"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressOther"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/outline_settings_black_48"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imgGroceries"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderGroceries"
+        app:layout_constraintEnd_toStartOf="@+id/progressGroceries"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@+id/borderGroceries"
+        app:layout_constraintTop_toTopOf="@+id/borderGroceries"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/img_groceries" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderHygiene"
+        app:layout_constraintEnd_toStartOf="@+id/progressHygiene"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@+id/borderHygiene"
+        app:layout_constraintTop_toTopOf="@+id/borderHygiene"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/img_soap" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderMeds"
+        app:layout_constraintEnd_toStartOf="@+id/progressMeds"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/borderMeds"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/img_meds" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderOther"
+        app:layout_constraintEnd_toStartOf="@+id/progressOther"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/borderOther"
+        app:layout_constraintTop_toTopOf="@+id/borderOther"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/img_other" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderPets"
+        app:layout_constraintEnd_toStartOf="@+id/progressPets"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/borderPets"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/img_pets2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

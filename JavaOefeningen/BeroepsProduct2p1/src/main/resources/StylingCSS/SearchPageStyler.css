@@ -1,0 +1,30 @@
+.list-cell:cell-selection{
+    -fx-border-color: #B6A0ED;
+}
+.list-cell:filled{
+    -fx-border-color:#B6A0ED;
+    -fx-background-color: #2E0C50;
+    -fx-text-fill: #B6A0ED;
+}
+.list-cell{
+    -fx-background-color: #2E0C50;
+}
+.list-cell:hover{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 12.5px;
+    -fx-cursor: HAND;
+}
+
+.scroll-bar{
+    -fx-background-color:#2E0C50;
+    -fx-fill:#B6A0ED;
+}
+#BackButton:hover{
+    -fx-border-color: #B6A0ED;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+#HomeButton:hover{
+    -fx-border-color: #B6A0ED;
+    -fx-border-width: 0px 0px 3px 0px;
+}

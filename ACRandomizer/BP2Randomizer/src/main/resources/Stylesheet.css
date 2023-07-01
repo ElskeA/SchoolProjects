@@ -1,0 +1,7 @@
+#rootPane {
+    -fx-background-image: url("background.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-height: 1004px;
+    -fx-pref-width: 1468px;
+}

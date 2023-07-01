@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BudgetApp</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="password_signup">Password:</string>
+    <string name="sign_up_btn">Sign up</string>
+    <string name="name">Name:</string>
+    <string name="total_budget">Total budget:</string>
+    <string name="email">Email:</string>
+    <string name="enter_details_for_registration">Enter details for registration</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="choose_a_password">Choose a password</string>
+    <string name="enter_your_total_budget">Enter your total budget</string>
+    <string name="add_transaction">Add transaction</string>
+    <string name="add">Add</string>
+    <string name="_5_25">€5,25</string>
+    <string name="cancel">Cancel</string>
+    <string name="hello">Hello</string>
+    <string name="your_budget">Your budget</string>
+    <string name="reset">Reset</string>
+    <string name="undo">Undo</string>
+    <string name="_0_00_left">€0,00 left</string>
+    <string name="_0_00">€0,00</string>
+
+    <string name="warningLow">Careful!</string>
+    <string name="warningMid">Warning!</string>
+    <string name="warningHigh">Uh oh!</string>
+
+    <string name="textWarningLow">There\'s a small chance you might go over budget in this category in the next month. \n \nPlease mind your spending!</string>
+    <string name="textWarningMid">There\'s a significant chance you\'ll go over budget in this category.\nAdjust your spending accordingly</string>
+    <string name="textWarningHigh">It\'s almost guaranteed you\'ll go over budget this month.\n \nPlease be wary.\nYou can change your budget in the settings.</string>
+
+</resources>

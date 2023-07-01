@@ -1,0 +1,118 @@
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: #03274F;
+    -fx-border-radius:5px;
+    -fx-border-width: 3px;
+}
+
+.check-box{
+    -fx-text-fill: #03274f;
+    -fx-font-size: 35px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-alignment: CENTER;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #A2DAE8;
+}
+
+.radio-button {
+    -fx-text-fill: #03274f;
+    -fx-font-size: 36px;
+    -fx-font-family: "Ubuntu Medium";
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color:  #94D200;
+    -fx-background-insets: 0;
+}
+
+#titleText {
+    -fx-text-fill: #03274f;
+    -fx-font-size: 50px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-alignment: CENTER;
+}
+
+#normalText {
+    -fx-text-fill: #03274f;
+    -fx-font-size: 35px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-alignment: CENTER;
+}
+
+#dateText {
+    -fx-text-fill: #03274f;
+    -fx-font-size: 40px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-alignment: CENTER;
+}
+
+#greenButton {
+    -fx-text-fill: WHITE;
+    -fx-font-size: 36px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-text-alignment: CENTER;
+    -fx-background-radius: 15px;
+    -fx-background-color: #94D200;
+    -fx-pref-height: 76;
+    -fx-pref-width: 375;
+}
+
+#blueButton {
+    -fx-text-fill: WHITE;
+    -fx-font-size: 36px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-text-alignment: CENTER;
+    -fx-background-radius: 15px;
+    -fx-background-color: #A2DAE8;
+    -fx-pref-height: 76;
+    -fx-pref-width: 375;
+}
+
+#textField {
+    -fx-text-fill: #03274f;
+    -fx-font-size: 36px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-background-radius: 15px;
+    -fx-border-width: 5px;
+    -fx-border-color: #94D200;
+    -fx-border-radius: 15px;
+    -fx-pref-height: 76;
+    -fx-pref-width: 855;
+}
+
+.label {
+    -fx-text-fill: #03274f;
+    -fx-font-size: 35px;
+    -fx-font-family: "Ubuntu Medium";
+    -fx-alignment: CENTER;
+}
+
+#boekPane {
+    -fx-padding: 10px;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 450px;
+    -fx-background-radius: 15px;
+    -fx-background-color: WHITE;
+    -fx-text-fill: #03274f;
+    -fx-font-size: 35px;
+    -fx-font-family: "Ubuntu Medium";
+}
+
+#scrollPane {
+    -fx-padding: 10px;
+    -fx-background-radius: 20px;
+    -fx-background-color: WHITE;
+    -fx-border-width: 5px;
+    -fx-border-color: #94D200;
+    -fx-border-radius: 15px;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 450px;
+    -fx-vbar-policy: NEVER;
+    -fx-hbar-policy: NEVER;
+}

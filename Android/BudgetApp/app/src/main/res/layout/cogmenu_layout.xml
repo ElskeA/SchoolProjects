@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="70dp"
+    android:background="@drawable/cogmenu"
+    android:layout_gravity="end"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Settings"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:fontFamily="@font/futur_heavy"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"/>
+
+    <TextView
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Log out"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:fontFamily="@font/futur_heavy"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

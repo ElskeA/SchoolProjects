@@ -1,0 +1,13 @@
+
+#ListButton:hover{
+    -fx-border-color: #B6A0ED;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+#InfoButton:hover{
+    -fx-border-color: #B6A0ED;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+#myLabel:hover{
+    -fx-text-fill: WHITE;
+    -fx-cursor: HAND;
+}

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Settings">
+
+    <TextView
+        android:id="@+id/tvHello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginTop="4dp"
+
+        android:fontFamily="@font/futur_heavy"
+        android:text="Hello"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsername2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:fontFamily="@font/futur_heavy"
+        android:text="Elske"
+        android:textColor="@color/black"
+
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle2"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello2" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="124dp"
+        android:fontFamily="@font/futur_heavy"
+
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/outline_settings_black_48"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="104dp"
+        android:scrollbarThumbHorizontal="@drawable/progress_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle2"
+        app:layout_constraintVertical_bias="0.023">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvPersonal"
+                            android:layout_width="320dp"
+                            android:layout_height="340dp"
+                            android:layout_margin="16dp"
+                            android:foreground="@drawable/editborder">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:id="@+id/persTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futur_heavy"
+                                    android:text="Personal Information"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp" />
+
+                                <EditText
+                                    android:id="@+id/txtName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/futura_light"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp" />
+
+                                <EditText
+                                    android:id="@+id/txtEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/futura_light"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp" />
+
+                                <EditText
+                                    android:id="@+id/txtPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futura_light"
+                                    android:inputType="textPassword"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp" />
+
+                                <Button
+                                    android:id="@+id/btnPers"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="140dp"
+                                    android:layout_marginTop="40dp"
+                                    android:background="@drawable/greenbutton"
+                                    android:fontFamily="@font/futur_heavy"
+                                    android:text="Save"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    app:backgroundTint="@null" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvTotal"
+                            android:layout_width="320dp"
+                            android:layout_height="340dp"
+                            android:layout_margin="16dp"
+                            android:foreground="@drawable/editborder">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:id="@+id/totalTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futur_heavy"
+                                    android:text="Budget"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:id="@+id/txtTotal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/futura_light"
+                                    android:text="It is recommended to only change your budget before hitting the reset button at the end of the month."
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <EditText
+                                    android:id="@+id/txtBudget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/futur_heavy"
+                                    android:text="€500"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp" />
+
+                                <Button
+                                    android:id="@+id/btnBudget"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="140dp"
+                                    android:layout_marginTop="53dp"
+                                    android:background="@drawable/greenbutton"
+                                    android:fontFamily="@font/futur_heavy"
+                                    android:text="Save"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    app:backgroundTint="@null" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCategories"
+                android:layout_width="320dp"
+                android:layout_height="340dp"
+                android:layout_margin="16dp"
+                android:foreground="@drawable/editborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/catTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futur_heavy"
+                        android:text="Category budgets"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="220dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtGroc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="18dp"
+                                android:fontFamily="@font/futura_light"
+                                android:text="Groceries:"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtHyg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="18dp"
+                                android:fontFamily="@font/futura_light"
+                                android:text="Hygiene:"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtPet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="18dp"
+                                android:fontFamily="@font/futura_light"
+                                android:text="Pets:"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtMeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:fontFamily="@font/futura_light"
+                                android:text="Medication:"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtOther"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_light"
+                                android:text="Other:"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="220dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etGroc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_light"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/etHyg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_light"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/etPets"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_light"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/etMeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_light"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/etOther"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_light"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btnSave"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/greenbutton"
+                        android:fontFamily="@font/futur_heavy"
+                        android:text="Save"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:backgroundTint="@null"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_left"
+        android:fontFamily="@font/futur_heavy"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

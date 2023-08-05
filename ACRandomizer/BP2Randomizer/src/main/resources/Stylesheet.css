@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+
 #rootPane {
-    -fx-background-image: url("background.png");
+    -fx-background-image: url("main.png");
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     -fx-pref-height: 1004px;
     -fx-pref-width: 1468px;
+}
+
+#list {
+    -fx-font-family: 'Arvo', serif;
+    -fx-text-fill: #5A4440;
+    -fx-font-size: 28px;
+}
+
+#header {
+    -fx-font-family: 'Arvo', serif;
+    -fx-text-fill: #5A4440;
+    -fx-font-weight: 700;
+    -fx-font-size: 40px;
+}
+
+#villagerPane{
+    -fx-background-image: url("villbackground.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-height: 1004px;
+    -fx-pref-width: 1468px;
+}
+
+#villagerName{
+    -fx-font-family: 'Arvo', serif;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: #5A4440;
+    -fx-font-size: 30px;
+    -fx-alignment: center;
+    -fx-pref-width: 185;
+    -fx-pref-height: 36;
 }

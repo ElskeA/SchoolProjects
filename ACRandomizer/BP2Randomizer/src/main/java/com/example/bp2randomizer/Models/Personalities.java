@@ -5,19 +5,24 @@ import java.util.List;
 
 public class Personalities {
 
+    List<String> lstPerson = new ArrayList<>();
+
     public Personalities(){
 
-        List<String> lstPerson = new ArrayList<>();
+        lstPerson.add("Normal");
+        lstPerson.add("Peppy");
+        lstPerson.add("Snooty");
+        lstPerson.add("Lazy");
+        lstPerson.add("Jock");
+        lstPerson.add("Cranky");
+        lstPerson.add("Smug");
+        lstPerson.add("Sisterly");
 
-        lstPerson.add("normal");
-        lstPerson.add("peppy");
-        lstPerson.add("snooty");
-        lstPerson.add("lazy");
-        lstPerson.add("jock");
-        lstPerson.add("cranky");
-        lstPerson.add("smug");
+    }
 
-        System.out.println(lstPerson);
+    public List geefList(){
+        return lstPerson;
     }
 
 }
+

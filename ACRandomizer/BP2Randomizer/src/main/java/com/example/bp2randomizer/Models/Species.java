@@ -24,7 +24,7 @@ public class Species {
         lstSpecies.add("Frog");
         lstSpecies.add("Goat");
         lstSpecies.add("Gorilla");
-        lstSpecies.add("Hippopotamus");
+        lstSpecies.add("Hippo");
         lstSpecies.add("Horse");
         lstSpecies.add("Kangaroo");
         lstSpecies.add("Koala");

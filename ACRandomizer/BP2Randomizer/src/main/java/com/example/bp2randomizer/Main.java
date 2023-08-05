@@ -1,72 +1,85 @@
 package com.example.bp2randomizer;
 
+import com.example.bp2randomizer.Controllers.Randomiser;
 import com.example.bp2randomizer.Models.Personalities;
 import com.example.bp2randomizer.Models.Species;
+import com.example.bp2randomizer.Views.Villagers;
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.List;
 
 public class Main extends Application {
 
-
     @Override
     public void start(Stage primaryStage) {
-
         Personalities ps = new Personalities();
+        List<String> lstPerson = ps.geefList();
         Species spec = new Species();
+        List<String> lstSpecies = spec.geefList();
 
         Pane root = new Pane();
-        root.setStyle("-fx-background-color: #C4E9EB");
-        Scene scene = new Scene(root, 1920, 1080);
-        scene.getStylesheets().add("Stylesheet.css");
+        root.setId("rootPane");
+        Scene scene = new Scene(root, 1468, 1004);
+        scene.getStylesheets().add(getClass().getResource("/Stylesheet.css").toExternalForm());
 
-        Pane wp = new Pane();
-        wp.setId("rootPane");
-        wp.relocate(226, 32);
+        Label lbIntro = new Label("Don't know what villagers to get to liven up your island? \nBrowse from either of the categories below, or if you're feeling \nadventurous, hit the button and we'll pick them all for you!");
+        lbIntro.setId("list");
+        lbIntro.relocate(135, 235);
 
-        Image imgInfo = new Image("Info.png");
-        ImageView vInfo = new ImageView(imgInfo);
-        vInfo.relocate(85, 181);
-
-        Image imgPers = new Image("Personalities.png");
-        ImageView vPers = new ImageView(imgPers);
-        vPers.relocate(85, 436);
-
-        Image imgSpecies = new Image("Species.png");
-        ImageView vSpec = new ImageView(imgSpecies);
-        vSpec.relocate(538, 436);
-
-        Image imgButton = new Image("bluebtn.png");
+        Image imgButton = new Image("button.png");
         ImageView vButton = new ImageView(imgButton);
         vButton.relocate(1053, 253);
+        vButton.setOnMouseClicked(event -> {
+            Randomiser.generateAndPrintRandomNumbers(10,1,413);
+            Villagers v = new Villagers();
+        });
 
-        HBox hb = new HBox();
-        hb.relocate(594, 551);
-        hb.setSpacing(20);
+        Label lbPerson = new Label("Personalities");
+        lbPerson.setId("header");
+        lbPerson.relocate(150, 454);
 
-        VBox vb1 = new VBox();
-        VBox vb2 = new VBox();
-        VBox vb3 = new VBox();
-        VBox vb4 = new VBox();
-        VBox vb5 = new VBox();
+        Label lbSpecies = new Label("Species");
+        lbSpecies.setId("header");
+        lbSpecies.relocate(595, 454);
 
-        for(int i = 0; i < spec.geefList().size(); i++){
-            String curr = (String) spec.geefList().get(i);
-            System.out.println(curr);
-        }
+        GridPane perPane = createGridPane(lstPerson, 2, 4, 35, 50, 150, 550);
+        GridPane specPane = createGridPane(lstSpecies, 5, (int) Math.ceil(lstSpecies.size() / 5.0), 35, 20, 590, 525);
 
-        wp.getChildren().addAll(vInfo, vPers, vSpec, vButton);
+        root.getChildren().addAll(vButton, specPane, perPane, lbIntro, lbPerson, lbSpecies);
 
-        root.getChildren().addAll(wp);
-        primaryStage.setTitle("Animal Crossing Randomizer");
+        primaryStage.setTitle("Animal Crossing Randomiser");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
 
+    public GridPane createGridPane(List<String> dataList, int numColumns, int numRows, double hgap, double vgap, double relocateX, double relocateY) {
+        GridPane gridPane = new GridPane();
+        gridPane.relocate(relocateX, relocateY);
+        gridPane.setHgap(hgap);
+        gridPane.setVgap(vgap);
+        gridPane.setPadding(new Insets(10));
+
+        int index = 0;
+        for (int col = 0; col < numColumns; col++) {
+            for (int row = 0; row < numRows; row++) {
+                if (index < dataList.size()) {
+                    Label label = new Label(dataList.get(index));
+                    label.setId("list");
+                    gridPane.add(label, col, row);
+                    index++;
+                }
+            }
+        }
+
+        return gridPane;
     }
 
     public static void main(String[] args) {
